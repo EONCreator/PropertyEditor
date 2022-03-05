@@ -14,7 +14,8 @@ namespace PropertyEditor.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "value1", "value2" };
+            var values = new string[] { "value1", "value2" };
+            return Ok(values);
         }
 
         // GET api/values/5
